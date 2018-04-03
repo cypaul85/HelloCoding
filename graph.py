@@ -18,7 +18,6 @@ def search(name):
     search_queue += graph[name]
     searched = []
     while search_queue:
-        print(search_queue)
         person = search_queue.popleft()
         if not person in searched:
             if person_is_seller(person):
